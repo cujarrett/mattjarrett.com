@@ -1,0 +1,8 @@
+.angular
+.git
+.github
+.vscode
+dist
+node_modules
+media
+*.md

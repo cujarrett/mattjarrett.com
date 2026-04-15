@@ -1,0 +1,190 @@
+:host {
+  display: block;
+}
+
+.about {
+  background-color: #292c33;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  overflow: auto;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+hr.light {
+  border: none;
+  border-top: 3px solid white;
+  max-width: 50px;
+  margin: 20px auto;
+}
+
+.about-columns {
+  display: flex;
+  overflow: auto;
+}
+
+.left-col {
+  width: 50%;
+  float: left;
+  padding: 2%;
+}
+
+.right-col {
+  width: 50%;
+  float: left;
+  padding: 2%;
+}
+
+.about-block {
+  margin-bottom: 30px;
+}
+
+.text-light-faded {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.text-faded-more {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Certifications */
+.certs {
+  overflow: auto;
+}
+
+.cert-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cert-img {
+  width: 15%;
+  flex-shrink: 0;
+}
+
+.cert-img img {
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: auto;
+}
+
+.cert-name {
+  width: 85%;
+  padding-left: 16px;
+}
+
+.cert-name h4 a {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.cert-name h4 a:hover {
+  color: var(--theme-primary);
+}
+
+/* Skill Bars */
+#skills-graph {
+  padding-top: 10px;
+}
+
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  height: 35px;
+  border-radius: 3px;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-family: var(--font-sans);
+  z-index: 1;
+}
+
+.skillbar-title span {
+  display: block;
+  width: 200px;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.skillbar-bar {
+  height: 35px;
+  width: 0;
+  border-radius: 3px;
+  transition: width 3s ease;
+}
+
+/* More info links */
+.more-about-info {
+  margin-top: 20px;
+}
+
+.more-about-info a {
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.more-about-info a:hover {
+  color: var(--theme-primary);
+}
+
+/* Responsive */
+@media (max-width: 1026px) {
+  .left-col {
+    width: 100%;
+  }
+
+  .right-col {
+    width: 100%;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .cert-img {
+    width: 50%;
+  }
+}
